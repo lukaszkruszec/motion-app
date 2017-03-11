@@ -7,10 +7,10 @@ function onDeviceReady() {
 }
 
 function onSuccess(acceleration) {
-    let data = 'Acceleration X: ' + acceleration.x + '\n' +
-          'Acceleration Y: ' + acceleration.y + '\n' +
-          'Acceleration Z: ' + acceleration.z + '\n' +
-          'Timestamp: '      + acceleration.timestamp + '\n';
+    let data = 'Acceleration X: ' + acceleration.x + '<br>' +
+          'Acceleration Y: ' + acceleration.y + '<br>' +
+          'Acceleration Z: ' + acceleration.z + '<br>' +
+          'Timestamp: '      + acceleration.timestamp + '<br>';
 
     document.body.innerHTML = data;
 }
@@ -19,4 +19,4 @@ function onError() {
     alert('onError!');
 }
 
-var options = { frequency: 3000 };  // Update every 3 seconds
+var options = { frequency: 500 };  // Update every 3 seconds
